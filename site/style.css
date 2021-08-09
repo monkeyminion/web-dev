@@ -23,13 +23,20 @@
     top:50%;
     left:50%;
 }
-
+/* despite the orange and purple blocks moved to different
+spots, the browser still thinks they are stacked one on top
+of the other in left-hand side of the grey box. They are
+holding the grey box open.*/
 #two {
     background-color: blueviolet;
+    position: relative;
+    left:50%;
 }
 
 #three {
     background-color: chocolate;
+    position: relative;
+    bottom:250px;
 }
 
 #four {
