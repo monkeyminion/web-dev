@@ -6,46 +6,44 @@
 
 .container {
     background-color:grey;
-    position: absolute;
-    top:200px;
 }
 .box {
     width:100px;
     height:100px;
-    margin-bottom:10px;
+    margin:10px;
     border:5px solid black;
-    /* position:absolute; */
 }
 
 #one {
     background-color: aqua;
-    position: absolute;
-    top:50%;
-    left:50%;
 }
-/* despite the orange and purple blocks moved to different
-spots, the browser still thinks they are stacked one on top
-of the other in left-hand side of the grey box. They are
-holding the grey box open.*/
+
 #two {
     background-color: blueviolet;
-    position: relative;
-    left:50%;
 }
 
 #three {
     background-color: chocolate;
-    position: relative;
-    bottom:250px;
 }
 
 #four {
     background-color: darkgreen;
-    position: absolute;
-    top:0%;
-    left:75%;
 }
 
+/* medium width devices */
+@media (min-width: 992px) and (max-width: 11999px){
+    .box {
+        float:left;
+        background: url('https://humethnet.files.wordpress.com/2016/02/100px-biohazard_symbol_red-svg.png');
+    }
+}
+
+@media (min-width: 1200px) {
+    .box {
+        float:left;
+        margin-left:10%;
+    }
+}
 section {
     clear:both;
 }
