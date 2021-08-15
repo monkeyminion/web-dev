@@ -1,49 +1,66 @@
-*{
+* {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+}
+h1 {
+    margin-bottom: 15px;
 }
 
-.container {
-    background-color:grey;
-}
-.box {
-    width:100px;
-    height:100px;
-    margin:10px;
-    border:5px solid black;
-}
-
-#one {
-    background-color: aqua;
+p {
+    border: 1px solid black;
+    background-color: red;
+    width: 90%;
+    height: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
-#two {
-    background-color: blueviolet;
+.row {
+    width:100%;
 }
 
-#three {
-    background-color: chocolate;
+
+.col {
+    float: left;
+    border: 1px solid green;
 }
 
-#four {
-    background-color: darkgreen;
-}
-
-/* medium width devices */
-@media (min-width: 992px) and (max-width: 11999px){
-    .box {
-        float:left;
-        background: url('https://humethnet.files.wordpress.com/2016/02/100px-biohazard_symbol_red-svg.png');
-    }
-}
-
+/* large screens */
 @media (min-width: 1200px) {
-    .box {
-        float:left;
-        margin-left:10%;
+    /* 1 col wide, 12 divs per line */
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    /* 2 col wide, 6 divs per line */
+    .col-lg-2 {
+        width: 16.66%;
+    }
+    /* 3 cols wide, 4 divs per line */
+    .col-lg-3 {
+        width: 25%;
     }
 }
-section {
-    clear:both;
+
+/* medium screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* 3 cols wide, 4 divs per line */
+    .col-md-3 {
+        width: 25%;
+    }
+    /* 4 cols wide, 3 divs per line */
+    .col-md-4 {
+        width: 33.33%;
+    }
+    /* 6 cols wide, 2 divs per line */
+    .col-md-6 {
+        width:50%;
+    }
+}
+
+/* small screens */
+@media (max-width: 991px) {
+    .col-sm-6 {
+        width:50%;
+    }
 }
