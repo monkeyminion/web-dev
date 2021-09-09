@@ -9,7 +9,7 @@ h1 {
 section {
     border: solid black;
     background: grey;
-    /* position: relative; */
+    overflow: auto;
 }
 
 /* Desktop view */
@@ -17,7 +17,6 @@ section {
     .lg-4-col {
         width:33.33%;
         float:left;
-        /* margin-left: 10px; */
     }
 }
 
@@ -29,25 +28,15 @@ section {
         /* margin-left: 50px; */
         /* clear:right; */
     }
-
-    .md-12-col {
-        width:100%;
-    }
 }
 
-.margin {
-    /* margin: 10px; */
-    padding: 10px;
-}
-.nocollapse {
-    overflow: auto;
-}
 
 h2.food_type{
     border:solid black;
     width: 150px;
     text-align: center;
     float: right;
+    clear:left;
 }
 
 #chicken {
@@ -60,5 +49,8 @@ h2.food_type{
 
 #sushi {
     background-color: yellow;
-    /* clear:left; */
+}
+
+article.food_type {
+    float:left;
 }
