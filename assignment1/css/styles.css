@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin:0%;
+}
+
+h1 {
+    text-align: center;
+}
+section {
+    border: solid black;
+    background: grey;
+    /* position: relative; */
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+    .lg-4-col {
+        width:33.33%;
+        float:left;
+        /* margin-left: 10px; */
+    }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px){
+    .md-6-col {
+        width:50%;
+        float:left;
+        /* margin-left: 50px; */
+        /* clear:right; */
+    }
+
+    .md-12-col {
+        width:100%;
+    }
+}
+
+.margin {
+    /* margin: 10px; */
+    padding: 10px;
+}
+.nocollapse {
+    overflow: auto;
+}
+
+h2.food_type{
+    border:solid black;
+    width: 150px;
+    text-align: center;
+    float: right;
+}
+
+#chicken {
+    background-color:pink;
+}
+
+#beef {
+    background-color: red;
+}
+
+#sushi {
+    background-color: yellow;
+    /* clear:left; */
+}
