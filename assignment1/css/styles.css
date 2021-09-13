@@ -3,13 +3,19 @@
     margin:0%;
 }
 
+body {
+    padding: 10px;
+}
 h1 {
     text-align: center;
+    margin: 30px;
 }
-section {
+.food_box {
     border: solid black;
     background: grey;
     overflow: auto;
+    margin:10px;
+    display: inline-block;
 }
 
 /* Desktop view */
@@ -30,7 +36,10 @@ section {
     }
 }
 
-
+.margin {
+    /* margin: 20px; */
+    margin:50%;
+}
 h2.food_type{
     border:solid black;
     width: 150px;
@@ -53,4 +62,6 @@ h2.food_type{
 
 article.food_type {
     float:left;
+    margin:10px;
+    margin-bottom: 0px;
 }
