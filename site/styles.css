@@ -1,0 +1,17 @@
+body {
+    background-color: aqua;
+    margin:0;
+}
+
+#header-nav {
+    background-color: rgb(245, 245, 189);
+    margin:0;
+}
+.container {
+    width: 100%;
+}
+
+#store_logo {
+    width: 100px;
+    height: 100px;
+}
